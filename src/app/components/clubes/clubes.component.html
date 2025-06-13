@@ -1,0 +1,19 @@
+<div class="clubes">
+    <div class="title">
+        <h1>CLUBES</h1>
+    </div>
+    <h2>Temporada 2024/2025 - Equipos de Primera División</h2>
+    <div class="lista">
+        <div class="lista-clubes" *ngFor="let equipo of equipos">
+          <div class="lista-club" (click)="goToClub(equipo.equipo.id)">
+            <h2>{{ equipo.equipo.nombre }}</h2>
+            <img [src]="equipo.equipo.escudo" alt="escudo" class="escudo">
+          </div>
+        </div>
+      </div>   
+    <div class="volver" (click)="goTo('/home/')">
+        <button class="btnVolver">Volver</button>
+    </div>
+</div>
+
+

@@ -1,0 +1,255 @@
+.clasf {
+    margin-top: 4%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 2em;
+  }
+  
+  .title {
+    background-color: rgb(248, 50, 50);
+    border: 2px solid white;
+    color: white;
+    width: 50%;
+    height: 50px;
+    margin-bottom: 20px;
+    border-radius: 30px;
+    padding: 10px 0;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+
+.clasificacion {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    font-size: 1.1em;
+}
+
+.clasificacion-header {
+    display: flex;
+    flex-direction: row;
+    gap: 5em;
+    margin: 0 auto;
+    height: 60px;
+    border: solid 2px white;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #243563;
+}
+
+.clasificacion-row {
+    display: flex;
+    flex-direction: row;
+    gap: 5em;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #0a0f1c;
+    box-shadow: 
+    0 0 10px rgba(0, 0, 0, 0.1), 
+    0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.clasificacion-row:hover {
+    background-color: #243563;
+}
+
+.clasificacion-row img {
+    width: 40px;
+    object-fit: contain;
+}
+
+.equipo-nombre:hover {
+    cursor: pointer;
+}
+
+.color-indicator {
+    width: 15px;
+    height: 40px; 
+    margin-right: 10px;
+    border-radius: 4px;
+    background-color: transparent; 
+    flex-shrink: 0;
+  }
+
+  .color-gold {
+    background-color: gold;
+  }
+  
+  .color-green {
+    background-color: green;
+  }
+  
+  .color-blue {
+    background-color: blue;
+  }
+  
+  .color-purple {
+    background-color: purple;
+  }
+  
+  .color-red {
+    background-color: red;
+  }
+  
+  .info-colores {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 70%;
+    margin-top: 3%;
+    gap: 3em;
+  }
+
+  .info-row {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .volver {
+    margin-top: 2%;
+    width: 20%;
+  }
+
+  .btnVolver {
+    background-color: rgb(248, 50, 50);
+    color: white;
+    border: solid 2px white;
+    width: 60%;
+    height: 40px;
+    border-radius: 30px;
+    font-size: 1.3em;
+  }
+
+  .btnVolver:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: 1s ease;
+    background-color: rgb(131, 17, 17);
+  }
+
+  @media(max-width: 1024px) {
+    .clasf {
+      width: 90%;
+      margin: 0 auto;
+      overflow-x: hidden; 
+      display: flex;
+      flex-direction: column;
+      height: auto; 
+    }
+  
+    .title {
+      margin-top: 10%;
+    }
+    
+    .clasificacion {
+      width: 100%;
+      font-size: 1em;
+      overflow-x: auto; 
+      overflow-y: visible;
+      margin-bottom: 20px;
+      -webkit-overflow-scrolling: touch; 
+    }
+  
+    
+    .clasificacion-inner {
+      min-width: 900px; 
+      width: 100%;
+    }
+  
+    
+    .clasificacion-header span,
+    .clasificacion-row span {
+      width: 40px !important;
+      text-align: center;
+      flex-shrink: 0; 
+    }
+  
+    .clasificacion-header span:nth-child(2),
+    .clasificacion-row span:nth-child(2) {
+      width: 150px !important;
+    }
+  
+    .clasificacion-header span:nth-child(3),
+    .clasificacion-row span:nth-child(3) {
+      width: 30px !important;
+    }
+  
+    
+    .clasificacion-header,
+    .clasificacion-row {
+      gap: 2em;
+      padding: 15px;
+      min-width: 700px; 
+    }
+  
+    .volver {
+      width: 60%;
+      margin-top: 20px;
+    }
+  
+    .info-colores {
+      grid-template-columns: repeat(2, 1fr);
+      width: 90%;
+      margin-top: 20px;
+      gap: 1em;
+    }
+  }
+
+  @media(max-width: 600px) {
+
+    .title {
+      width: 90%;
+    }
+
+    .clasificacion {
+      width: 100%;
+      font-size: 0.9em;
+      overflow-x: auto; 
+      overflow-y: visible;
+      margin-bottom: 20px;
+      -webkit-overflow-scrolling: touch; 
+    }
+  
+    
+    .clasificacion-inner {
+      min-width: 900px; 
+      width: 100%;
+    }
+  
+    
+    .clasificacion-header span,
+    .clasificacion-row span {
+      width: 30px !important;
+      text-align: center;
+      flex-shrink: 0; 
+    }
+  
+    .clasificacion-header span:nth-child(2),
+    .clasificacion-row span:nth-child(2) {
+      width: 100px !important;
+    }
+  
+    .clasificacion-header span:nth-child(3),
+    .clasificacion-row span:nth-child(3) {
+      width: 30px !important;
+    }
+  
+    
+    .clasificacion-header,
+    .clasificacion-row {
+      gap: 2em;
+      padding: 15px;
+      min-width: 500px; 
+    }
+
+    .volver {
+      width: 80%;
+    }
+  }

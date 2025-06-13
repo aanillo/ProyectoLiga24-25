@@ -1,0 +1,303 @@
+.plantilla {
+    margin-top: 4%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 2em;
+  }
+  
+  .title {
+    background-color: rgb(248, 50, 50);
+    border: 2px solid white;
+    color: white;
+    width: 50%;
+    height: 50px;
+    margin-bottom: 20px;
+    border-radius: 30px;
+    padding: 10px 0;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+
+  .title-area {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    margin: 0 auto;
+    justify-content: space-evenly;
+  }
+
+  .club-title {
+    color: white;
+    width: 40%;
+    justify-content: center;
+    align-items: center;
+    text-decoration: center;
+    display: flex;
+    font-size: 2em;
+  }
+
+  .escudo {
+    width: 150px;
+  }
+
+  .lista {
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2em;
+  }
+
+  .lista-jugadores {
+    height: auto;
+    gap: 0;
+  }
+
+  .lista-jugadores:hover {
+    transform: scale(1.1);
+    transition: 1s ease;
+  }
+
+  .datos h3 {
+    font-size: 1.5em;
+    margin: 0;
+    padding: 0;
+  }
+
+  .datos h1 {
+    font-size: 4em;
+    margin: 0;
+    padding: 0;
+  }
+
+  .datos p {
+    font-size: 1.3em;
+    margin: 0;
+    padding: 0;
+  }
+
+  .volver {
+    margin-top: 2%;
+    width: 20%;
+  }
+
+  .btnVolver {
+    background-color: rgb(248, 50, 50);
+    color: white;
+    border: solid 2px white;
+    width: 60%;
+    height: 40px;
+    border-radius: 30px;
+    font-size: 1.3em;
+  }
+
+  .btnVolver:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: 1s ease;
+    background-color: rgb(131, 17, 17);
+  }
+
+  .color-barcelona {
+    background: linear-gradient(to right, #002D62 50%, #A50044 50%);
+    color: goldenrod;
+    border-radius: 10px;
+    padding: 10px;
+  }
+  
+  .color-real-madrid {
+    background: white;
+    color: rgb(97, 56, 143);
+    border-radius: 10px;
+    padding: 10px;
+  }
+  
+  .color-atletico {
+    background: linear-gradient(to right, #d90000 50%, #ffffff 50%);
+    color: rgb(21, 34, 155);
+    border-radius: 10px;
+    padding: 10px;
+  }
+  
+  .color-athletic {
+    background: linear-gradient(to right, #e5254e 50%, #ffffff 50%);
+    color: black;
+    border-radius: 10px;
+    padding: 10px;
+  }
+  
+  .color-villarreal {
+    background: rgb(255, 230, 103); 
+    color: blue;
+    border-radius: 10px;
+    padding: 10px;
+  }
+  
+  .color-real-betis {
+    background: linear-gradient(to right, #40bb81 50%, #ffffff 50%);
+    color: black;
+    border-radius: 10px;
+    padding: 10px;
+  }
+  
+  .color-celta {
+    background: rgb(138, 195, 238); 
+    color: black;
+    border-radius: 10px;
+    padding: 10px;
+  }
+  
+  .color-rayo {
+    background: white;
+    color: rgb(204, 0, 0); 
+    border-radius: 10px;
+    padding: 10px;
+  }
+  
+  .color-osasuna {
+    background: rgb(217, 26, 33);
+    color: rgb(10, 52, 111); 
+    border-radius: 10px;
+    padding: 10px;
+  }
+  
+  .color-mallorca {
+    background: rgb(204, 0, 0); 
+    color: black;
+    border-radius: 10px;
+    padding: 10px;
+  }
+  
+  .color-real-sociedad {
+    background: linear-gradient(to right, #191cd6 50%, #ffffff 50%);
+    color: black;
+    border-radius: 10px;
+    padding: 10px;
+  }
+  
+  .color-valencia {
+    background: linear-gradient(to right, #ffffff 50%, #ee3524 50%);
+    color: black;
+    border-radius: 10px;
+    padding: 10px;
+  }
+  
+  .color-getafe {
+    background: rgb(0, 93, 159); 
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+  }
+
+  .color-espanyol {
+    background: linear-gradient(to right, #005baa 50%, #ffffff 50%);
+    color: black;
+    border-radius: 10px;
+    padding: 10px;
+  }
+  
+  .color-alaves {
+    background: linear-gradient(to right, #0a44a0 50%, #ffffff 50%);
+    color: black;
+    border-radius: 10px;
+    padding: 10px;
+  }
+  
+  .color-girona {
+    background: linear-gradient(to right, #d6001c 50%, #ffffff 50%);
+    color: blue;
+    border-radius: 10px;
+    padding: 10px;
+  }
+  
+  .color-sevilla {
+    background: #ffffff;
+    color: #d1001f;
+    border-radius: 10px;
+    padding: 10px;
+  }
+  
+  .color-leganes {
+    background: linear-gradient(to right, #005baa 50%, #ffffff 50%);
+    color: black;
+    border-radius: 10px;
+    padding: 10px;
+  }
+  
+  .color-las-palmas {
+    background: #f8d95a;
+    color: rgb(0, 81, 135); 
+    border-radius: 10px;
+    padding: 10px;
+  }
+  
+  .color-valladolid {
+    background: linear-gradient(to right, #691369 50%, #ffffff 50%);
+    color: black;
+    border-radius: 10px;
+    padding: 10px;
+  }
+  
+
+  @media(max-width: 1024px) {
+
+    .plantilla {
+      width: 90%;
+      margin: 0 auto;
+      overflow-x: hidden;
+    }
+  
+    .title {
+      margin-top: 10%;
+    }
+
+    .title-area {
+      display: flex;
+      flex-direction: column;
+      margin-left: 38%;
+    }
+
+    .lista {
+      width: 100%;
+      grid-template-columns: repeat(2, 1fr);
+      margin: 0 auto;
+    }
+
+    .volver {
+      width: 60%;
+    }
+
+  }
+
+  @media(max-width: 600px) {
+
+    .plantilla {
+      overflow-y: hidden;
+    }
+
+    .lista {
+      width: 100%;
+      margin: 0 auto;
+      overflow-x: hidden;
+      grid-template-columns: 1fr;
+      overflow-y: hidden;
+    }
+
+    .datos {
+      width: 80%;
+      margin: 0 auto;
+    }
+
+    .title {
+      width: 90%;
+    }
+
+    .volver {
+      width: 80%;
+    }
+  }

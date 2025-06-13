@@ -1,0 +1,57 @@
+<div class="club">
+    <div class="title">
+        <h1>INFORMACIÓN DE CLUB</h1>
+    </div>
+
+    <div class="club-main">
+        <div class="club-title">
+            <h2>{{ club?.equipo?.nombre?.toUpperCase() }}</h2>
+        </div>
+        <div class="datos-club">
+            <div class="imagen">
+                <img [src]="club?.equipo?.escudo" alt="escudo" class="escudo">
+            </div>
+            <div class="datos">
+                <div class="dato">
+                    <p class="dato-title"><strong>Localidad: </strong></p>
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>{{ club?.equipo?.localidad }}</p>
+                </div>
+                <div class="dato">
+                    <p class="dato-title"><strong>Estadio: </strong></p>
+                    <i class="fas fa-landmark"></i>
+                    <p>{{ club?.equipo?.estadio }}</p>
+                </div>
+                <div class="dato">
+                    <p class="dato-title"><strong>Año fundación: </strong></p>
+                    <i class="fas fa-calendar-alt"></i>
+                    <p>{{ club?.equipo?.fundacion }}</p>
+                </div>
+                <div class="dato">
+                    <p class="dato-title"><strong>Títulos de Liga: </strong></p>
+                    <i class="fas fa-trophy"></i>
+                    <p>{{ club?.equipo?.numeroLigas }}</p>
+                </div>
+                <div class="dato">
+                    <p class="dato-title"><strong>Posición temporada 24/25: </strong></p>
+                    <i class="fas fa-ranking-star"></i>
+                    <p>{{ club?.equipo?.id }}</p>
+                </div>
+                <div class="dato">
+                    <p class="dato-title"><strong>Entrenador: </strong></p>
+                    <i class="fas fa-chalkboard-teacher"></i>
+                    <p>{{ club?.equipo?.entrenador }}</p>
+                </div>
+                <div class="info-plantilla">
+                    <p>Ver plantilla temporada 24/25</p>
+                    <button class="btnPlantilla" (click)="goToPlantilla(club?.equipo?.id)">PLANTILLA</button>
+                </div>
+            </div>
+        </div>
+    </div>
+      
+    <div class="volver" (click)="goBack()">
+        <button class="btnVolver">Volver</button>
+    </div>
+</div>
+

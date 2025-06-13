@@ -1,0 +1,132 @@
+.records {
+    margin-top: 4%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 2em;
+  }
+  
+  .title {
+    background-color: rgb(248, 50, 50);
+    border: 2px solid white;
+    color: white;
+    width: 50%;
+    height: 50px;
+    margin-bottom: 20px;
+    border-radius: 30px;
+    padding: 10px 0;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+
+
+  .record-area {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 20px;
+    background-color: #0a0f1c;
+    box-shadow: 
+    0 0 10px rgba(0, 0, 0, 0.1), 
+    0 0 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    gap: 1em;
+  }
+
+  .record-area h2 {
+    font-size: 2em;
+  }
+
+  .record-area h3 {
+    font-size: 1.5em;
+  }
+
+  .record-area p {
+    font-size: 1.2em;
+  }
+
+  .record-area a {
+    color: wheat;
+  }
+
+  .record-area a:hover {
+    cursor: pointer;
+  }
+
+  .record-title {
+    border: solid 2px white;
+    background-color: #243563;
+  }
+
+  .record-column {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+  }
+  
+  hr {
+    text-decoration: dashed;
+    width: 90%;
+    color: wheat;
+  }
+
+  .volver {
+    margin-top: 2%;
+    width: 20%;
+  }
+
+  .btnVolver {
+    background-color: rgb(248, 50, 50);
+    color: white;
+    border: solid 2px white;
+    width: 60%;
+    height: 40px;
+    border-radius: 30px;
+    font-size: 1.3em;
+  }
+
+  .btnVolver:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: 1s ease;
+    background-color: rgb(131, 17, 17);
+  }
+
+  @media(max-width: 1024px) {
+
+    .records {
+      width: 90%;
+      margin: 0 auto;
+    }
+  
+    .title {
+      margin-top: 10%;
+    }
+
+    .record-area {
+      display: flex;
+      flex-direction: column;
+      gap: 10em;
+    }
+
+    .volver {
+      width: 60%;
+    }
+
+  }
+
+  @media(max-width: 600px) {
+
+    .title {
+      width: 90%;
+    }
+
+    
+
+    .volver {
+      width: 80%;
+    }
+  }

@@ -1,0 +1,22 @@
+<div class="nav">
+    <div class="logo" (click)="goToInicio()">
+        <img src="/img/logo.png" alt="logo">
+    </div>
+    <div class="enlace" (click)="goTo('/home/')" [class.active]="activeRoute === '/home/' || activeRoute === '/home/index'">
+        <i class="fas fa-home"></i>
+        <a>Inicio</a>
+    </div>
+    <div class="enlace" (click)="goTo('/home/clubes')" [class.active]="activeRoute === '/home/clubes' || activeRoute.startsWith('/home/club/') || activeRoute.startsWith('/home/plantilla/')">
+        <i class="fas fa-futbol"></i>
+        <a>Clubes</a>
+    </div>
+    <div class="enlace" (click)="goTo('/home/clasf')" [class.active]="activeRoute === '/home/clasf'">
+        <i class="fas fa-trophy"></i>
+        <a>Clasificación</a>
+    </div>
+    <div class="enlace" (click)="goTo('/home/record')" [class.active]="activeRoute === '/home/record'">
+        <i class="fas fa-chart-line"></i>
+        <a>Récords</a>
+    </div>
+    <h1>LFP</h1>
+</div>

@@ -1,0 +1,136 @@
+.clubes {
+    margin-top: 4%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 2em;
+  }
+  
+  .title {
+    background-color: rgb(248, 50, 50);
+    border: 2px solid white;
+    color: white;
+    width: 50%;
+    height: 50px;
+    margin-bottom: 20px;
+    border-radius: 30px;
+    padding: 10px 0;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+
+
+  .lista {
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 2em;
+  }
+
+  .lista-clubes {
+    gap: 2em;
+  }
+
+  .lista-club {
+    background-color: #0a1229;
+    width: 85%;
+    padding: 20px;
+    box-shadow: 
+    0 0 10px rgba(0, 0, 0, 0.1), 
+    0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .lista-club h2 {
+    font-size: 1.5em;
+  }
+
+  .lista-club img {
+    width: 170px;
+    height: 150px;
+    object-fit: contain;
+  }
+
+  .lista-club:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: 2s ease;
+    border: solid 2px white;
+    text-decoration: underline;
+    background-color: #243563;
+  }
+
+  .volver {
+    margin-top: 2%;
+    width: 20%;
+  }
+
+  .btnVolver {
+    background-color: rgb(248, 50, 50);
+    color: white;
+    border: solid 2px white;
+    width: 60%;
+    height: 40px;
+    border-radius: 30px;
+    font-size: 1.3em;
+  }
+
+  .btnVolver:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: 1s ease;
+    background-color: rgb(131, 17, 17);
+  }
+
+  @media(max-width: 1024px) {
+
+    .clubes {
+      width: 90%;
+      margin: 0 auto;
+    }
+  
+    .title {
+      margin-top: 10%;
+    }
+
+    .lista {
+      width: 100%;
+      grid-template-columns: repeat(2, 1fr);
+      margin: 0 auto;
+    }
+
+    .volver {
+      width: 60%;
+    }
+
+  }
+
+  @media(max-width: 600px) {
+
+    .lista {
+      width: 100%;
+      margin: 0 auto;
+      gap: 0;
+    }
+
+    .title {
+      width: 90%;
+    }
+
+    .lista-club {
+      width: 120px;
+      height: 230px;
+    }
+
+    .lista-club img {
+      width: 100px;
+    }
+
+    .volver {
+      width: 80%;
+    }
+  }

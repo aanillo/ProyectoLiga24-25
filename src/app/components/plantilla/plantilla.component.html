@@ -1,0 +1,25 @@
+<div class="plantilla">
+    <div class="title">
+        <h1>PLANTILLA</h1>
+    </div>
+    <div class="title-area">
+        <div class="club-title">
+            <h2>{{ club?.equipo?.nombre?.toUpperCase() }}</h2>
+        </div>
+        <div class="escudo">
+            <img [src]="club?.equipo?.escudo" alt="escudo" class="escudo">
+        </div>
+    </div>
+    <div class="lista">
+        <div class="lista-jugadores" *ngFor="let jugador of club?.equipo?.jugadores">
+          <div class="datos" [ngClass]="getColorClass()">
+            <h3><strong>{{ jugador.nombre.toUpperCase() }}</strong></h3>
+            <h1><strong>{{ jugador.dorsal }}</strong></h1>
+            <p><strong>{{ jugador.posicion }}</strong></p>
+          </div>
+        </div>
+      </div>   
+      <div class="volver" (click)="goBack()">
+        <button class="btnVolver">Volver</button>
+    </div>
+</div>

@@ -1,0 +1,67 @@
+<div class="clasf">
+    <div class="title">
+        <h1>CLASIFICACIÓN</h1>
+    </div>
+    <h2>Temporada 2024/2025</h2>
+    <div class="clasificacion">
+        <div class="clasificacion-header">
+            <span style="width: 50px;"><strong>POSICIÓN</strong></span>
+            <span style="width: 200px;"><strong>EQUIPO</strong></span>
+            <span style="width: 50px;"></span>
+            <span style="width: 50px;"><strong>PTS</strong></span>
+            <span style="width: 50px;"><strong>V</strong></span>
+            <span style="width: 50px;"><strong>E</strong></span>
+            <span style="width: 50px;"><strong>D</strong></span>
+            <span style="width: 50px;"><strong>GF</strong></span>
+            <span style="width: 50px;"><strong>GF</strong></span>
+          </div>
+          
+          <div class="clasificacion-row" *ngFor="let equipo of equipos">
+            <span style="width: 50px; color: wheat; display: flex; align-items: center; gap: 5px;">
+                <div class="color-indicator" [ngClass]="getColorClass(equipo.equipo.id)"></div>
+                <strong>{{ equipo.equipo.id }}</strong>
+            </span>
+            <span class="equipo-nombre" style="width: 200px; color: wheat;" (click)="goToClub(equipo.equipo.id)"><strong>{{ equipo.equipo.nombre }}</strong></span>
+            <span style="width: 50px;"><img [src]="equipo.equipo.escudo" alt="escudo" class="escudo"></span>
+            <span style="width: 50px; color: wheat;"><strong>{{ equipo.puntos }}</strong></span>
+            <span style="width: 50px;">{{ equipo.victorias }}</span>
+            <span style="width: 50px;">{{ equipo.empates }}</span>
+            <span style="width: 50px;">{{ equipo.derrotas }}</span>
+            <span style="width: 50px;">{{ equipo.golesFavor }}</span>
+            <span style="width: 50px;">{{ equipo.golesContra }}</span>
+          </div>  
+    </div>
+
+    <div class="info-colores">
+        <div class="info">
+          <div class="info-row">
+            <div class="color-indicator color-gold"></div>
+            <p>Campeón de Liga</p>
+          </div>
+          <div class="info-row">
+            <div class="color-indicator color-green"></div>
+            <p>Clasificación a Champions League</p>
+          </div>
+        </div>
+        <div class="info">
+            <div class="info-row">
+                <div class="color-indicator color-blue"></div>
+                <p>Clasificación a Europa League</p>
+              </div>
+          <div class="info-row">
+            <div class="color-indicator color-purple"></div>
+            <p>Clasificación a Conference League</p>
+          </div>
+        </div>
+        <div class="info">
+            <div class="info-row">
+                <div class="color-indicator color-red"></div>
+                <p>Descenso a Segunda División</p>
+              </div>
+        </div>
+      </div>
+      <div class="volver" (click)="goTo('/home/')">
+        <button class="btnVolver">Volver</button>
+      </div>
+</div>
+
