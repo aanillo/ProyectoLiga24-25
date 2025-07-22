@@ -28,6 +28,8 @@
     flex-direction: column;
     width: 90%;
     font-size: 1.1em;
+    overflow-x: auto; 
+    overflow-y: visible;
 }
 
 .clasificacion-header {
