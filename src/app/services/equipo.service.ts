@@ -14,7 +14,7 @@ export class EquipoService {
       equipo: {
         id: 1,
         nombre: 'Barcelona',
-        escudo: '/img/escudos/barcelona.png',
+        escudo: 'img/escudos/barcelona.png',
         localidad: 'Barcelona',
         fundacion: 1899,
         estadio: 'Spotify Camp Nou',
@@ -35,7 +35,7 @@ export class EquipoService {
         equipo: {
           id: 2,
           nombre: 'Real Madrid',
-          escudo: '/img/escudos/realMadrid.png',
+          escudo: 'img/escudos/realMadrid.png',
           localidad: 'Madrid',
           fundacion: 1902,
           estadio: 'Santiago Bernabéu',
@@ -56,7 +56,7 @@ export class EquipoService {
         equipo: {
           id: 3,
           nombre: 'Atlético de Madrid',
-          escudo: '/img/escudos/atletico.png',
+          escudo: 'img/escudos/atletico.png',
           localidad: 'Madrid',
           fundacion: 1903,
           estadio: 'Civitas Metropolitano',
@@ -77,7 +77,7 @@ export class EquipoService {
         equipo: {
           id: 4,
           nombre: 'Athletic de Bilbao',
-          escudo: '/img/escudos/athletic.png',
+          escudo: 'img/escudos/athletic.png',
           localidad: 'Bilbao',
           fundacion: 1898,
           estadio: 'San Mamés',
@@ -98,7 +98,7 @@ export class EquipoService {
         equipo: {
           id: 5,
           nombre: 'Villarreal',
-          escudo: '/img/escudos/villarreal.png',
+          escudo: 'img/escudos/villarreal.png',
           localidad: 'Villarreal - Castellón',
           fundacion: 1923,
           estadio: 'Estadio de la Cerámica',
@@ -119,7 +119,7 @@ export class EquipoService {
         equipo: {
           id: 6,
           nombre: 'Real Betis',
-          escudo: '/img/escudos/realBetis.png',
+          escudo: 'img/escudos/realBetis.png',
           localidad: 'Sevilla',
           fundacion: 1907,
           estadio: 'Benito Villamarín',
@@ -140,7 +140,7 @@ export class EquipoService {
         equipo: {
           id: 7,
           nombre: 'Celta',
-          escudo: '/img/escudos/celta.png',
+          escudo: 'img/escudos/celta.png',
           localidad: 'Vigo - Pontevedra',
           fundacion: 1923,
           estadio: 'Balaídos',
@@ -161,7 +161,7 @@ export class EquipoService {
         equipo: {
           id: 8,
           nombre: 'Rayo Vallecano',
-          escudo: '/img/escudos/rayo.png',
+          escudo: 'img/escudos/rayo.png',
           localidad: 'Madrid',
           fundacion: 1924,
           estadio: 'Estadio de Vallecas',
@@ -182,7 +182,7 @@ export class EquipoService {
         equipo: {
           id: 9,
           nombre: 'Osasuna',
-          escudo: '/img/escudos/osasuna.png',
+          escudo: 'img/escudos/osasuna.png',
           localidad: 'Pamplona',
           fundacion: 1920,
           estadio: 'El Sadar',
@@ -203,7 +203,7 @@ export class EquipoService {
         equipo: {
           id: 10,
           nombre: 'Mallorca',
-          escudo: '/img/escudos/mallorca.png',
+          escudo: 'img/escudos/mallorca.png',
           localidad: 'Mallorca',
           fundacion: 1916,
           estadio: 'Son Moix',
@@ -224,7 +224,7 @@ export class EquipoService {
         equipo: {
           id: 11,
           nombre: 'Real Sociedad',
-          escudo: '/img/escudos/realSociedad.png',
+          escudo: 'img/escudos/realSociedad.png',
           localidad: 'San Sebastián',
           fundacion: 1909,
           estadio: 'Reale Arena',
@@ -245,7 +245,7 @@ export class EquipoService {
         equipo: {
           id: 12,
           nombre: 'Valencia',
-          escudo: '/img/escudos/valencia.png',
+          escudo: 'img/escudos/valencia.png',
           localidad: 'Valencia',
           fundacion: 1919,
           estadio: 'Mestalla',
@@ -266,7 +266,7 @@ export class EquipoService {
         equipo: {
           id: 13,
           nombre: 'Getafe',
-          escudo: '/img/escudos/getafe.png',
+          escudo: 'img/escudos/getafe.png',
           localidad: 'Getafe - Madrid',
           fundacion: 1983,
           estadio: 'Coliseum Alfonso Pérez',
@@ -287,7 +287,7 @@ export class EquipoService {
         equipo: {
           id: 14,
           nombre: 'Espanyol',
-          escudo: '/img/escudos/espanyol.png',
+          escudo: 'img/escudos/espanyol.png',
           localidad: 'Barcelona',
           fundacion: 1900,
           estadio: 'Cornellá',
@@ -308,7 +308,7 @@ export class EquipoService {
         equipo: {
           id: 15,
           nombre: 'Alavés',
-          escudo: '/img/escudos/alaves.png',
+          escudo: 'img/escudos/alaves.png',
           localidad: 'Vitoria',
           fundacion: 1921,
           estadio: 'Mendizorroza',
@@ -329,7 +329,7 @@ export class EquipoService {
         equipo: {
           id: 16,
           nombre: 'Girona',
-          escudo: '/img/escudos/girona.png',
+          escudo: 'img/escudos/girona.png',
           localidad: 'Girona',
           fundacion: 1930,
           estadio: 'Montilivi',
@@ -350,7 +350,7 @@ export class EquipoService {
         equipo: {
           id: 17,
           nombre: 'Sevilla',
-          escudo: '/img/escudos/sevilla.png',
+          escudo: 'img/escudos/sevilla.png',
           localidad: 'Sevilla',
           fundacion: 1890,
           estadio: 'Ramón Sánchez Pizjuán',
@@ -371,7 +371,7 @@ export class EquipoService {
         equipo: {
           id: 18,
           nombre: 'Leganés',
-          escudo: '/img/escudos/leganes.png',
+          escudo: 'img/escudos/leganes.png',
           localidad: 'Leganés - Madrid',
           fundacion: 1928,
           estadio: 'Butarque',
@@ -392,7 +392,7 @@ export class EquipoService {
         equipo: {
           id: 19,
           nombre: 'Las Palmas',
-          escudo: '/img/escudos/lasPalmas.png',
+          escudo: 'img/escudos/lasPalmas.png',
           localidad: 'Las Palmas de Gran Canaria',
           fundacion: 1949,
           estadio: 'Estadio Gran Canaria',
@@ -413,7 +413,7 @@ export class EquipoService {
         equipo: {
           id: 20,
           nombre: 'Valladolid',
-          escudo: '/img/escudos/valladolid.png',
+          escudo: 'img/escudos/valladolid.png',
           localidad: 'Valladolid',
           fundacion: 1928,
           estadio: 'José Zorrilla',
